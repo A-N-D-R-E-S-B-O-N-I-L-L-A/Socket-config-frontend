@@ -1,0 +1,15 @@
+<div id="chat-messages" class="m-2">
+    <li class="list-group-item" *ngFor="let message of messages">
+        <h4>{{message.name}}</h4>
+        <p>{{message.body}}</p>
+    </li>
+</div>
+
+
+<form (ngSubmit)="emitMessage()">
+
+    <input type="text" name="message" [(ngModel)]="message">
+
+    <button type="submit">enviar</button>
+
+</form>

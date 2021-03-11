@@ -1,0 +1,6 @@
+<div class="bg-dark p-2 text-white text-left">
+    <p>Server Status:</p>
+    <span class="text-success" *ngIf="serviceSocket.socketStatus">Online</span>
+    <span class="text-danger" *ngIf="!serviceSocket.socketStatus">Offline</span>
+
+</div>
